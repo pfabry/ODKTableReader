@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ODKTableReader
+
+idspace: ODKTABLEREADER
+base_url: /obo/ODKTableReader
+
+products:
+- ODKTableReader.owl: https://raw.githubusercontent.com/pfabry/ODKDocsTableReader/main/ODKTableReader.owl
+- ODKTableReader.obo: https://raw.githubusercontent.com/pfabry/ODKDocsTableReader/main/ODKTableReader.obo
+
+term_browser: ontobee
+example_terms:
+- ODKTABLEREADER_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/pfabry/ODKDocsTableReader/v
+
+- prefix: /tracker/
+  replacement: https://github.com/pfabry/ODKDocsTableReader/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/ODKTABLEREADER?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/pfabry/ODKDocsTableReader/main/
+

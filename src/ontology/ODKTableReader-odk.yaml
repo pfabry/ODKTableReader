@@ -1,0 +1,23 @@
+id: ODKTableReader
+title: ODKv1.5 test mkdocs table-reader
+github_org: pfabry
+repo: ODKDocsTableReader
+documentation:
+  documentation_system: mkdocs
+release_artefacts:
+  - base
+  - full
+primary_release: full
+export_formats:
+  - owl
+import_group:
+  products:
+    - id: bfo
+      module_type: mirror
+robot_report:
+  custom_sparql_exports:
+    - basic-report
+    - my-cat-report
+    - terms
+robot_java_args: "-Xmx8G"
+run_as_root: TRUE
