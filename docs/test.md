@@ -13,4 +13,4 @@ test of csv report
 
 test of automatic report
 
-{{ read_csv('reports/basic-report.csv') }}
+{{ read_csv('../src/ontology/reports/basic-report.csv') }}
